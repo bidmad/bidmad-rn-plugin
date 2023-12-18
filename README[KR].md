@@ -1030,7 +1030,7 @@ await gdprInterface?.loadForm();
 await gdprInterface?.showForm();
 ```
 
-5. 해제 콜백에서 오류가 null인지 확인합니다. 오류가 null이면 사용자 동의가 성공적으로 수집된 것입니다.
+5. onConsentFormDismissed 콜백에서 오류가 null인지 확인합니다. 오류가 null이면 사용자 동의가 성공적으로 수집된 것입니다.
 ```js
 if (error === null) {
   // ** SUCCESSFULLY COLLECTED USER CONSENT STATUS **
