@@ -158,6 +158,10 @@ npx pod-install ios
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
+        <string>54NZKQM89Y.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
         <string>54nzkqm89y.skadnetwork</string>
     </dict>
     <dict>
@@ -310,6 +314,14 @@ npx pod-install ios
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
+        <string>bmxgpxpgc.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>bvpn9ufa9b.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
         <string>bxvub5ada5.skadnetwork</string>
     </dict>
     <dict>
@@ -410,6 +422,10 @@ npx pod-install ios
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
+        <string>gvmwg8q7h5.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
         <string>h65wbv5k3f.skadnetwork</string>
     </dict>
     <dict>
@@ -427,6 +443,10 @@ npx pod-install ios
     <dict>
         <key>SKAdNetworkIdentifier</key>
         <string>k674qkevps.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>k6y4y55b64.skadnetwork</string>
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
@@ -522,6 +542,10 @@ npx pod-install ios
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
+        <string>pu4na253f3.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
         <string>pwa73g5rt2.skadnetwork</string>
     </dict>
     <dict>
@@ -539,6 +563,10 @@ npx pod-install ios
     <dict>
         <key>SKAdNetworkIdentifier</key>
         <string>qwpu75vrh2.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>r26jy69rpl.skadnetwork</string>
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
@@ -586,6 +614,10 @@ npx pod-install ios
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
+        <string>tvvz7th9br.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
         <string>u679fj5vs4.skadnetwork</string>
     </dict>
     <dict>
@@ -626,11 +658,15 @@ npx pod-install ios
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
+        <string>wzmmZ9fp6w.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
         <string>wzmmz9fp6w.skadnetwork</string>
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
-        <string>wzmmZ9fp6w.skadnetwork</string>
+        <string>x2jnk7ly8j.skadnetwork</string>
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
@@ -667,6 +703,18 @@ npx pod-install ios
     <dict>
         <key>SKAdNetworkIdentifier</key>
         <string>ydx93a7ass.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>yrqqpx2mcb.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>z24wtl6j62.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>z4gj7hsk7h.skadnetwork</string>
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
