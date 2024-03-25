@@ -16,22 +16,25 @@ Pod::Spec.new do |s|
 
   s.source_files = "ios/**/*.{h,m,mm,swift}"
 
-  s.dependency "BidmadSDK", "6.4.1"
-  s.dependency "OpenBiddingHelper", "6.4.0"
-  s.dependency "BidmadVungleAdapter", "7.1.0.0"
-  s.dependency "BidmadTeadsAdapter", "5.0.27.0"
-  s.dependency "BidmadPubmaticAdapter", "3.2.0.0"
-  s.dependency "BidmadPangleAdapter", "5.3.1.0.0"
-  s.dependency "BidmadFyberAdapter", "8.2.4.0"
-  s.dependency "BidmadAtomAdapter", "1.0.0.0"
-  s.dependency "BidmadAdFitAdapter", "3.12.7.0"
-  s.dependency "BidmadAdColonyAdapter", "4.9.0.0"
-  s.dependency "BidmadADOPCoupangAdapter", "1.0.0.0"
-  s.dependency "BidmadUnityAdsAdapter", "4.8.0.0"
-  s.dependency "BidmadIronSourceAdapter", "7.5.0.0.0"
-  s.dependency "BidmadGoogleAdMobAdapter", "10.12.0.0"
-  s.dependency "BidmadGoogleAdManagerAdapter", "10.12.0.0"
-  s.dependency "BidmadAppLovinAdapter", "11.11.3.0"
+  # NECESSARY
+  s.dependency 'BidmadSDK', '6.6.1'
+  s.dependency 'OpenBiddingHelper', '6.6.1'
+  s.dependency 'BidmadGoogleAdMobAdapter', '11.2.0.0'
+  s.dependency 'BidmadGoogleAdManagerAdapter', '11.2.0.0'
+  s.dependency 'BidmadAppLovinAdapter', '12.2.1.0'
+  s.dependency 'BidmadUnityAdsAdapter', '4.9.3.0'
+  s.dependency 'BidmadPangleAdapter', '5.8.0.7.0'
+  s.dependency 'BidmadFyberAdapter', '8.2.6.0'
+  s.dependency 'BidmadVungleAdapter', '7.2.2.0'
+  s.dependency 'BidmadPubmaticAdapter', '3.2.0.3'
+  s.dependency 'BidmadADOPCoupangAdapter', '1.0.0.3'
+  s.dependency 'BidmadPartners/AdMobBidding', '1.0.3'
+  
+  # OPTIONAL
+  s.dependency 'BidmadTeadsAdapter', '5.0.27.3'
+  s.dependency 'BidmadAtomAdapter', '1.0.0.3'
+  s.dependency 'BidmadAdFitAdapter', '3.12.7.4'
+  s.dependency 'BidmadIronSourceAdapter', '7.8.0.0.0'
 
   # Use install_modules_dependencies helper to install the dependencies if React Native version >=0.71.0.
   # See https://github.com/facebook/react-native/blob/febf6b7f33fdb4904669f99d795eba4c0f95d7bf/scripts/cocoapods/new_architecture.rb#L79.
