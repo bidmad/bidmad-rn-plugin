@@ -107,11 +107,16 @@ public class RNInterstitialModule extends ReactContextBaseJavaModule {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onInterstitialLoadFail");
-				params.putString("error", bmAdError.msg);
+				params.putString("error", bmAdError.getMsg());
 				sendEvent(params);
 			}
 
-			@Override
+      @Override
+      public void onShowFailAd(BMAdError error) {
+        //Currently not supported.
+      }
+
+      @Override
 			public void onCloseAd() {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);

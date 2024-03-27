@@ -107,11 +107,16 @@ public class RNRewardModule extends ReactContextBaseJavaModule {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onRewardLoadFail");
-				params.putString("error", bmAdError.msg);
+				params.putString("error", bmAdError.getMsg());
 				sendEvent(params);
 			}
 
-			@Override
+      @Override
+      public void onShowFailAd(BMAdError error) {
+        //Currently not supported.
+      }
+
+      @Override
 			public void onCompleteAd() {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
