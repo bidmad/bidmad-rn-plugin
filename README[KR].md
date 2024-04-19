@@ -33,7 +33,7 @@ npx pod-install ios
 
 ## Usage
 
-### 개인정보 보호 매니페스트 세팅 및 Xcode
+### 개인정보 보호 매니페스트 세팅 및 Xcode (iOS에만 해당)
 
 - Bidmad RN 플러그인은 Xcode 15.3을 지원합니다. Xcode 버전 15.3 미만을 사용하고 계시다면 최신 버전으로 업데이트해주세요.
 - App Store에 애플리케이션을 제출할 때 다음 가이드를 참고하여 개인정보 보호 정책 및 설문조사를 올바르게 설정하세요: [Guide for Privacy Manifest & Privacy Survey](https://github.com/bidmad/Bidmad-iOS/wiki/Guide-for-Privacy-Manifest-&-Privacy-Survey-%5BKR%5D)
