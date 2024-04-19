@@ -33,6 +33,11 @@ npx pod-install ios
 
 ## Usage
 
+### 개인정보 보호 매니페스트 세팅 및 Xcode
+
+- Bidmad RN 플러그인은 Xcode 15.3을 지원합니다. Xcode 버전 15.3 미만을 사용하고 계시다면 최신 버전으로 업데이트해주세요.
+- App Store에 애플리케이션을 제출할 때 다음 가이드를 참고하여 개인정보 보호 정책 및 설문조사를 올바르게 설정하세요: [Guide for Privacy Manifest & Privacy Survey](https://github.com/bidmad/Bidmad-iOS/wiki/Guide-for-Privacy-Manifest-&-Privacy-Survey-%5BKR%5D)
+
 ### SKAdNetwork 식별자 및 사용자 추적 설명 설정 (iOS에만 해당)
 
 - BidmadSDK에서 제공하는 광고 네트워크를 사용하려면 앱의 Info.plist에 SKAdNetworkIdentifiers를 추가해야 합니다. 다음 목록에 아래 SKAdNetworkItems를 추가하세요.

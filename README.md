@@ -33,6 +33,11 @@ npx pod-install ios
 
 ## Usage
 
+### Privacy Manifest Settings & Xcode (Only for iOS)
+
+- Bidmad RN Plugin supports Xcode 15.3. If you are using Xcode version lower than 15.3, please update to the latest version.
+- When submitting your application to the App Store, use the following guide to properly set up your privacy survey: [Guide for Privacy Manifest & Privacy Survey](https://github.com/bidmad/Bidmad-iOS/wiki/Guide-for-Privacy-Manifest-&-Privacy-Survey-%5BEN%5D)
+
 ### Setting SKAdNetwork Identifiers and User Tracking Description (Only for iOS)
 
 - To use ad networks provided by BidmadSDK, you need to add SKAdNetworkIdentifiers to your app's Info.plist. Please add SKAdNetworkItems below in the following list.
