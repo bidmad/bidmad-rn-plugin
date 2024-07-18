@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* BidmadRnPluginExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BidmadRnPluginExampleTests.m */; };
-		018BD84BCE34F6F5D4D379DA /* libPods-BidmadRnPluginExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B17B51490E26C8B01576C0 /* libPods-BidmadRnPluginExample.a */; };
-		0F0A94A08754C72781E84DC8 /* libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE74F6040786707CF2CCEC0 /* libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9E197A734E6F78F7E8C51B19 /* libPods-BidmadRnPluginExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C0F5F2BA1E9139465075F9 /* libPods-BidmadRnPluginExample.a */; };
+		D87DFEBE6C620B597A5D6E4D /* libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 345404BADBEBBC1A2DE27DBB /* libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +30,20 @@
 		00E356EE1AD99517003FC87E /* BidmadRnPluginExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BidmadRnPluginExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BidmadRnPluginExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BidmadRnPluginExampleTests.m; sourceTree = "<group>"; };
-		0B0660F0ECAFA310D4C008A2 /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* BidmadRnPluginExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BidmadRnPluginExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BidmadRnPluginExample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = BidmadRnPluginExample/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BidmadRnPluginExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BidmadRnPluginExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BidmadRnPluginExample/main.m; sourceTree = "<group>"; };
-		1A4D808534E92FED341EFAE9 /* Pods-BidmadRnPluginExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidmadRnPluginExample.debug.xcconfig"; path = "Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample.debug.xcconfig"; sourceTree = "<group>"; };
-		4EE74F6040786707CF2CCEC0 /* libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65FAEEE64302FC362B4A042E /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.release.xcconfig"; path = "Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		66B17B51490E26C8B01576C0 /* libPods-BidmadRnPluginExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidmadRnPluginExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F673A0D6B01C8E9E825269B /* Pods-BidmadRnPluginExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidmadRnPluginExample.release.xcconfig"; path = "Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample.release.xcconfig"; sourceTree = "<group>"; };
+		345404BADBEBBC1A2DE27DBB /* libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C2CAC536951249646BF67C4 /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.release.xcconfig"; path = "Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D870D5BE503792ADFA0C34B /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EA2DF4476736535B83255E2 /* Pods-BidmadRnPluginExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidmadRnPluginExample.debug.xcconfig"; path = "Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BidmadRnPluginExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5C0F5F2BA1E9139465075F9 /* libPods-BidmadRnPluginExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidmadRnPluginExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F21D6CD2C30F9D237EACDCF1 /* Pods-BidmadRnPluginExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidmadRnPluginExample.release.xcconfig"; path = "Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F0A94A08754C72781E84DC8 /* libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a in Frameworks */,
+				D87DFEBE6C620B597A5D6E4D /* libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				018BD84BCE34F6F5D4D379DA /* libPods-BidmadRnPluginExample.a in Frameworks */,
+				9E197A734E6F78F7E8C51B19 /* libPods-BidmadRnPluginExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				66B17B51490E26C8B01576C0 /* libPods-BidmadRnPluginExample.a */,
-				4EE74F6040786707CF2CCEC0 /* libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a */,
+				E5C0F5F2BA1E9139465075F9 /* libPods-BidmadRnPluginExample.a */,
+				345404BADBEBBC1A2DE27DBB /* libPods-BidmadRnPluginExample-BidmadRnPluginExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1A4D808534E92FED341EFAE9 /* Pods-BidmadRnPluginExample.debug.xcconfig */,
-				7F673A0D6B01C8E9E825269B /* Pods-BidmadRnPluginExample.release.xcconfig */,
-				0B0660F0ECAFA310D4C008A2 /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.debug.xcconfig */,
-				65FAEEE64302FC362B4A042E /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.release.xcconfig */,
+				5EA2DF4476736535B83255E2 /* Pods-BidmadRnPluginExample.debug.xcconfig */,
+				F21D6CD2C30F9D237EACDCF1 /* Pods-BidmadRnPluginExample.release.xcconfig */,
+				5D870D5BE503792ADFA0C34B /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.debug.xcconfig */,
+				3C2CAC536951249646BF67C4 /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BidmadRnPluginExampleTests" */;
 			buildPhases = (
-				F62D3A491D5EF74EBF8047FB /* [CP] Check Pods Manifest.lock */,
+				DB073C4BED4E6E3C8CE7C75F /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				24B9E6B71C3C263BCFEE08B5 /* [CP] Embed Pods Frameworks */,
-				C86200494584ED5064BEBCEC /* [CP] Copy Pods Resources */,
+				F8A9BE1CCA970C46D8A4A87F /* [CP] Embed Pods Frameworks */,
+				C49A445575100FBD7BF7E9CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,13 +176,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BidmadRnPluginExample" */;
 			buildPhases = (
-				81FF15772D2B8391CBF85A50 /* [CP] Check Pods Manifest.lock */,
+				E89425CF0FDDE8BE7B5AB84B /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				E5E3F509DAB75EA0ED52BFFC /* [CP] Embed Pods Frameworks */,
-				5140944C9D259080C2B46E9B /* [CP] Copy Pods Resources */,
+				DCC2851C166DC200A93A864F /* [CP] Embed Pods Frameworks */,
+				3C88C8CCC9E5CC5F0C330D67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,24 +265,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		24B9E6B71C3C263BCFEE08B5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5140944C9D259080C2B46E9B /* [CP] Copy Pods Resources */ = {
+		3C88C8CCC9E5CC5F0C330D67 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,7 +282,63 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		81FF15772D2B8391CBF85A50 /* [CP] Check Pods Manifest.lock */ = {
+		C49A445575100FBD7BF7E9CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB073C4BED4E6E3C8CE7C75F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC2851C166DC200A93A864F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E89425CF0FDDE8BE7B5AB84B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,60 +360,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C86200494584ED5064BEBCEC /* [CP] Copy Pods Resources */ = {
+		F8A9BE1CCA970C46D8A4A87F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E5E3F509DAB75EA0ED52BFFC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample/Pods-BidmadRnPluginExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F62D3A491D5EF74EBF8047FB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests/Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -410,7 +410,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B0660F0ECAFA310D4C008A2 /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 5D870D5BE503792ADFA0C34B /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -437,7 +437,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65FAEEE64302FC362B4A042E /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.release.xcconfig */;
+			baseConfigurationReference = 3C2CAC536951249646BF67C4 /* Pods-BidmadRnPluginExample-BidmadRnPluginExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -461,7 +461,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A4D808534E92FED341EFAE9 /* Pods-BidmadRnPluginExample.debug.xcconfig */;
+			baseConfigurationReference = 5EA2DF4476736535B83255E2 /* Pods-BidmadRnPluginExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -481,7 +481,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.techlabs.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adop.mnctest;
 				PRODUCT_NAME = BidmadRnPluginExample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Techlabs Test";
@@ -497,7 +497,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F673A0D6B01C8E9E825269B /* Pods-BidmadRnPluginExample.release.xcconfig */;
+			baseConfigurationReference = F21D6CD2C30F9D237EACDCF1 /* Pods-BidmadRnPluginExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -516,7 +516,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.techlabs.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adop.mnctest;
 				PRODUCT_NAME = BidmadRnPluginExample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Techlabs Test";
