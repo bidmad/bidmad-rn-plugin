@@ -9,7 +9,7 @@ PODS:
   - Ads-Global/Dep_Accurate (5.8.0.7):
     - BURelyFoundation_Global/Pangle (= 0.2.1.4)
   - AppLovinSDK (12.2.1)
-  - bidmad-rn-plugin (0.9.0):
+  - bidmad-rn-plugin (0.9.1):
     - BidmadAdFitAdapter (= 3.12.7.7)
     - BidmadADOPCoupangAdapter (= 1.0.0.7)
     - BidmadAppLovinAdapter (= 12.2.1.7)
@@ -1526,7 +1526,7 @@ SPEC CHECKSUMS:
   AdFitSDK: dc7a5a2ed6e432355d7429eed27c8f88d46da4cd
   Ads-Global: 2f19513311f4e360bcad037a2edf1dc2772ab224
   AppLovinSDK: ed2ea453fc6cc836f4f829046865e6731010c139
-  bidmad-rn-plugin: 45b64f54e12f096f4c7447f4c86f9def24fb2766
+  bidmad-rn-plugin: 7080e02a7e081a845c458b3be02f20c0785ce2b5
   BidmadAdFitAdapter: 96e0db4978e99f2d01c13853d9f75a5d84c2301f
   BidmadADOPCoupangAdapter: 687649c3ebe88f0ceb1d8fddecbe8e5739858166
   BidmadAppLovinAdapter: 1d5054f71626ad54adb0825cc9b4758c97cbe9d0
