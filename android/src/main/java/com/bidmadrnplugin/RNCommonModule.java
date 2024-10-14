@@ -26,7 +26,8 @@ public class RNCommonModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void initializeSdk(String appDomain, Promise promise){
         if(mReactContext != null) {
-            BidmadCommon.initializeSdk(mReactContext, appkey, new BidmadInitializeListener() {
+            Common.setRunningPlatform(PLATFORM.ReactNative);
+            BidmadCommon.initializeSdk(mReactContext, appDomain, new BidmadInitializeListener() {
                 @Override
                 public void onInitialized(boolean result) {
                     promise.resolve(result);
