@@ -6,7 +6,7 @@ _Pragma("clang diagnostic ignored \"-Wstrict-prototypes\"")
 
 @interface RCT_EXTERN_MODULE(RNBidmadCommonModule, NSObject)
 
-_RCT_EXTERN_REMAP_METHOD(initializeSdk, initializeSdkWithAppKey:(NSString *)appKey resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject, false)
+_RCT_EXTERN_REMAP_METHOD(initializeSdk, initializeSdkWithAppDomain:(NSString *)appDomain resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject, false)
 _RCT_EXTERN_REMAP_METHOD(reqAdTrackingAuthorization, reqAdTrackingAuthorizationWithResolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject, false)
 _RCT_EXTERN_REMAP_METHOD(setAdvertiserTracking, setAdvertiserTrackingWithEnable:(BOOL)enable resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject, false)
 _RCT_EXTERN_REMAP_METHOD(advertiserTracking, getAdvertiserTrackingWithResolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject, false)

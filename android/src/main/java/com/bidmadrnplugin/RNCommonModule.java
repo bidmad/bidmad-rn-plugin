@@ -1,6 +1,8 @@
 package com.bidmadrnplugin;
 
 import com.adop.sdk.AdOption;
+import com.adop.sdk.Common;
+import com.adop.sdk.defined.ADS.PLATFORM;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -22,7 +24,7 @@ public class RNCommonModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void initializeSdk(String appkey, Promise promise){
+    public void initializeSdk(String appDomain, Promise promise){
         if(mReactContext != null) {
             BidmadCommon.initializeSdk(mReactContext, appkey, new BidmadInitializeListener() {
                 @Override

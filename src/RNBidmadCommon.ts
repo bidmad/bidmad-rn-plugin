@@ -23,15 +23,15 @@ class RNBidmadCommon {
   }
 
   static async initializeSdk(
-    iOSAppKey: string,
-    androidAppKey: string
+    iOSAppDomain: string,
+    androidAppDomain: string
   ): Promise<boolean> {
     let initStatus = false;
 
     if (Platform.OS === 'ios') {
-      initStatus = await RNBidmadCommonModule.initializeSdk(iOSAppKey);
+      initStatus = await RNBidmadCommonModule.initializeSdk(iOSAppDomain);
     } else if (Platform.OS === 'android') {
-      initStatus = await RNBidmadCommonModule.initializeSdk(androidAppKey);
+      initStatus = await RNBidmadCommonModule.initializeSdk(androidAppDomain);
     }
 
     return initStatus;
