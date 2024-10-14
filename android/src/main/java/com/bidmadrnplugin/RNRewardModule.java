@@ -2,9 +2,11 @@ package com.bidmadrnplugin;
 
 import android.app.Activity;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.adop.sdk.BMAdError;
+import com.adop.sdk.BMAdInfo;
 import com.adop.sdk.reward.RewardListener;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Promise;
@@ -87,7 +89,7 @@ public class RNRewardModule extends ReactContextBaseJavaModule {
 	public void setListener(RNReward reward) {
 		reward.setListener(new RewardListener() {
 			@Override
-			public void onLoadAd() {
+			public void onLoadAd(@NonNull BMAdInfo info) {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onRewardLoad");
@@ -95,7 +97,7 @@ public class RNRewardModule extends ReactContextBaseJavaModule {
 			}
 
 			@Override
-			public void onShowAd() {
+			public void onShowAd(@NonNull BMAdInfo info) {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onRewardShow");
@@ -112,12 +114,12 @@ public class RNRewardModule extends ReactContextBaseJavaModule {
 			}
 
       @Override
-      public void onShowFailAd(BMAdError error) {
+      public void onShowFailAd(BMAdError error, @NonNull BMAdInfo info) {
         //Currently not supported.
       }
 
       @Override
-			public void onCompleteAd() {
+			public void onCompleteAd(@NonNull BMAdInfo info) {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onRewardComplete");
@@ -125,7 +127,7 @@ public class RNRewardModule extends ReactContextBaseJavaModule {
 			}
 
 			@Override
-			public void onCloseAd() {
+			public void onCloseAd(@NonNull BMAdInfo info) {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onRewardClose");
@@ -133,7 +135,7 @@ public class RNRewardModule extends ReactContextBaseJavaModule {
 			}
 
 			@Override
-			public void onClickAd() {
+			public void onClickAd(@NonNull BMAdInfo info) {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onRewardClick");
@@ -141,7 +143,7 @@ public class RNRewardModule extends ReactContextBaseJavaModule {
 			}
 
 			@Override
-			public void onSkipAd() {
+			public void onSkipAd(@NonNull BMAdInfo info) {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onRewardSkip");

@@ -2,9 +2,11 @@ package com.bidmadrnplugin;
 
 import android.app.Activity;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.adop.sdk.BMAdError;
+import com.adop.sdk.BMAdInfo;
 import com.adop.sdk.interstitial.InterstitialListener;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Promise;
@@ -87,7 +89,7 @@ public class RNInterstitialModule extends ReactContextBaseJavaModule {
 	public void setListener(RNInterstitial interstitial) {
 		interstitial.setListener(new InterstitialListener() {
 			@Override
-			public void onLoadAd() {
+			public void onLoadAd(@NonNull BMAdInfo info) {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onInterstitialLoad");
@@ -95,7 +97,7 @@ public class RNInterstitialModule extends ReactContextBaseJavaModule {
 			}
 
 			@Override
-			public void onShowAd() {
+			public void onShowAd(@NonNull BMAdInfo info) {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onInterstitialShow");
@@ -112,12 +114,12 @@ public class RNInterstitialModule extends ReactContextBaseJavaModule {
 			}
 
       @Override
-      public void onShowFailAd(BMAdError error) {
+      public void onShowFailAd(BMAdError error, @NonNull BMAdInfo info) {
         //Currently not supported.
       }
 
       @Override
-			public void onCloseAd() {
+			public void onCloseAd(@NonNull BMAdInfo info) {
 				WritableMap params = Arguments.createMap();
 				params.putString("instanceId", mInstanceId);
 				params.putString("action", "onInterstitialClose");

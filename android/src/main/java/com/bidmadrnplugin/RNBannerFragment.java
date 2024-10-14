@@ -6,9 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.adop.sdk.BMAdError;
+import com.adop.sdk.BMAdInfo;
 import com.adop.sdk.adview.AdViewListener;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -60,7 +62,7 @@ public class RNBannerFragment extends Fragment {
     public AdViewListener getListener() {
         return new AdViewListener() {
             @Override
-            public void onLoadAd() {
+            public void onLoadAd(@NonNull BMAdInfo info) {
                 if(reactContext != null) {
                     reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("onLoad_"+reactNativeViewId, null);
                 }
@@ -76,7 +78,7 @@ public class RNBannerFragment extends Fragment {
             }
 
             @Override
-            public void onClickAd() {
+            public void onClickAd(@NonNull BMAdInfo info) {
                 if(reactContext != null) {
                     reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("onClick_" + reactNativeViewId, null);
                 }
