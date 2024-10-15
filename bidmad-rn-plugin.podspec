@@ -16,22 +16,28 @@ Pod::Spec.new do |s|
 
   s.source_files = "ios/**/*.{h,m,mm,swift}"
 
-  s.dependency 'BidmadSDK', '6.8.0'
-  s.dependency 'OpenBiddingHelper', '6.8.0'
-  s.dependency 'BidmadGoogleAdMobAdapter', '11.2.0.7'
-  s.dependency 'BidmadGoogleAdManagerAdapter', '11.2.0.7'
-  s.dependency 'BidmadAdFitAdapter', '3.12.7.7'
-  s.dependency 'BidmadAppLovinAdapter', '12.2.1.7'
-  s.dependency 'BidmadFyberAdapter', '8.2.6.7'
-  s.dependency 'BidmadPangleAdapter', '5.8.0.7.7'
-  s.dependency 'BidmadUnityAdsAdapter', '4.9.3.7'
-  s.dependency 'BidmadVungleAdapter', '7.2.2.7'
-  s.dependency 'BidmadADOPCoupangAdapter', '1.0.0.7'
-  s.dependency 'BidmadAtomAdapter', '1.0.0.7'
-  s.dependency 'BidmadIronSourceAdapter', '7.8.0.0.7'
-  s.dependency 'BidmadPubmaticAdapter', '3.2.0.7'
-  s.dependency 'BidmadTeadsAdapter', '5.0.27.7'
-  s.dependency 'BidmadPartners/AdMobBidding', '1.0.4'
+  s.dependency "BidmadADOPCoupangAdapter-Dev", "1.0.0.10.0"
+  s.dependency "BidmadAdFitAdapter-Dev", "3.12.7.10.0"
+  s.dependency "BidmadAdPopcornAdapter-Dev", "2.6.5.10.1"
+  s.dependency "BidmadAdpieAdapter-Dev", "1.6.1.10.0"
+  s.dependency "BidmadAllianceInternetAdapter-Dev", "1.0.0.10.0"
+  s.dependency "BidmadAppLovinAdapter-Dev", "13.0.0.10.0"
+  s.dependency "BidmadAtomAdapter-Dev", "1.0.0.10.0"
+  s.dependency "BidmadCoviAdapter-Dev", "1.0.0.10.1"
+  s.dependency "BidmadFyberAdapter-Dev", "8.3.2.10.0"
+  s.dependency "BidmadGoogleAdManagerAdapter-Dev", "11.10.0.10.0"
+  s.dependency "BidmadGoogleAdMobAdapter-Dev", "11.10.0.10.0"
+  s.dependency "BidmadIronSourceAdapter-Dev", "8.3.0.0.10"
+  s.dependency "BidmadMobonAdapter-Dev", "0.6.17.10.0"
+  s.dependency "BidmadMobwithAdapter-Dev", "1.0.0.10.0"
+  s.dependency "BidmadPangleAdapter-Dev", "6.2.0.7.10"
+  s.dependency "BidmadPartners-Dev/AdMobBidding", "1.0.5"
+  s.dependency "BidmadPubmaticAdapter-Dev", "3.2.0.10.0"
+  s.dependency "BidmadSDK-Dev", "6.11.1"
+  s.dependency "BidmadTeadsAdapter-Dev", "5.0.27.10.0"
+  s.dependency "BidmadUnityAdsAdapter-Dev", "4.12.3.10.0"
+  s.dependency "BidmadVungleAdapter-Dev", "7.4.1.10.0"
+  s.dependency "OpenBiddingHelper-Dev", "6.11.1"
 
   # Use install_modules_dependencies helper to install the dependencies if React Native version >=0.71.0.
   # See https://github.com/facebook/react-native/blob/febf6b7f33fdb4904669f99d795eba4c0f95d7bf/scripts/cocoapods/new_architecture.rb#L79.
