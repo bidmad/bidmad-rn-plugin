@@ -18,8 +18,8 @@ export default function App() {
     const initialAction = async () => {
       // Before requesting ads, please initialize BidmadSDK first
       await RNBidmadCommon.initializeSdk(
-        "6b097551-7f78-11ed-a117-026864a21938",
-        "ff8090d3-3e28-11ed-a117-026864a21938"
+        "Your iOS App Domain",
+        "Your Android App Domain"
       );
 
       // Please set NSUserTrackingUsageDescription in info.plist before calling reqAdTrackingAuthorization method
