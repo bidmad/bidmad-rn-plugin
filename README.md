@@ -877,8 +877,8 @@ The "initializeSdk" method takes the iOS and Android app domain as arguments, an
 import { RNBidmadCommon } from "bidmad-rn-plugin";
 
 const isInitialized = await RNBidmadCommon.initializeSdk(
-  "Your iOS APP Domain", // iOS App Key
-  "Your AOS APP Domain"  // Android App Key
+  "Your iOS APP Domain", // iOS App Domain
+  "Your AOS APP Domain"  // Android App Domain
 );
 
 if (isInitialized) {
