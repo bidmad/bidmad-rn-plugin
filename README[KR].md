@@ -1,5 +1,10 @@
 # bidmad-rn-plugin
 
+> [!IMPORTANT]
+> 0.10.0 버전부터는 기존에 사용하던 **Appkey가 AppDomain으로 변경**되었습니다.<br>
+> **AppDomain은 기존 Appkey와 호환이 되지 않아 initiaize를 위해서는 AppDomain을 새로 발급받으셔야 합니다.**<br>
+> 0.10.0 버전으로 업데이트 하시는 경우에는 **테크랩스 플랫폼 사업부 운영팀에 연락 부탁 드립니다.**<br>
+
 Bidmad-RN-Plugin은 모바일 앱 광고 SDK인 Bidmad를 React Native에서 사용하기 위한 플러그인입니다.
 
 ## 바로가기
@@ -812,7 +817,9 @@ public static final ** CREATOR;
 
 ### Admob App ID 설정
 
-Google Admob을 사용하려면 애플리케이션이 info.plist(iOS) 및 manifest(Android) 파일에 앱 식별자를 포함해야 합니다. [App Key 찾기](https://github.com/bidmad/SDK/wiki/Find-your-app-key%5BKR%5D#app-id-from-admob-dashboard) 문서의 'ADMOB 대시보드에서 앱 ID' 섹션을 참조하세요. 자신의 앱 식별자를 찾은 후, info.plist 또는 AndroidManifest.xml에 추가하세요.
+Google Admob을 사용하려면 애플리케이션이 info.plist(iOS) 및 manifest(Android) 파일에 앱 식별자를 포함해야 합니다.<br>
+[App Key 찾기](https://github.com/bidmad/SDK/wiki/Find-your-app-key%5BKR%5D#app-id-from-admob-dashboard) 문서의 'ADMOB 대시보드에서 앱 ID' 섹션을 참조하세요.<br>
+자신의 앱 식별자를 찾은 후, info.plist 또는 AndroidManifest.xml에 추가하세요.
 
 iOS
 ```
@@ -833,7 +840,8 @@ Android
 
 ### 앱 추적 투명성 메시지 표시하기 (iOS 전용)
 
-iOS 14.5부터, 사용자 데이터 추적 또는 수집 전에 사용자 동의를 얻기 위해 앱 추적 투명성 (ATT) 메시지 표시가 필요합니다. Bidmad 플러그인은 ATT 메시지 팝업을 표시하기 위한 인터페이스를 제공하며, 아래와 같이 사용할 수 있습니다.
+iOS 14.5부터, 사용자 데이터 추적 또는 수집 전에 사용자 동의를 얻기 위해 앱 추적 투명성 (ATT) 메시지 표시가 필요합니다.<br>
+Bidmad 플러그인은 ATT 메시지 팝업을 표시하기 위한 인터페이스를 제공하며, 아래와 같이 사용할 수 있습니다.
 
 ```js
 import { RNBidmadCommon } from "bidmad-rn-plugin";
@@ -861,14 +869,15 @@ case RNBidmadTrackingAuthorizationStatus.LessThaniOS14:
 
 ### BidmadSDK 초기화
 
-"initializeSdk" 메소드는 BidmadSDK를 실행하기 위해 필요한 작업들을 수행합니다. 광고를 로드하기 전에 이 메소드를 호출해 주세요. "initializeSdk" 메소드는 iOS 및 Android 앱 키를 인자로 받으며, 앱 키는 ADOP Insight 웹페이지(insight.adop.cc)에서 확인할 수 있습니다. ADOP Insight에서 앱 키를 찾는 방법에 대한 자세한 지침은 [App Key 찾기](https://github.com/bidmad/SDK/wiki/Find-your-app-key%5BKR%5D) 가이드를 참조하세요. 
+"initializeSdk" 메소드는 BidmadSDK를 실행하기 위해 필요한 작업들을 수행합니다. 광고를 로드하기 전에 이 메소드를 호출해 주세요.<br>
+"initializeSdk" 메소드는 iOS 및 Android App Domain을 인자값으로 받으며, App Domain은 테크랩스 플랫폼 운영팀을 통해 발급 받으실 수 있습니다.
 
 ```js
 import { RNBidmadCommon } from "bidmad-rn-plugin";
 
 const isInitialized = await RNBidmadCommon.initializeSdk(
-  "6b097551-7f78-11ed-a117-026864a21938", // iOS App Key
-  "ff8090d3-3e28-11ed-a117-026864a21938"  // Android App Key
+  "Your iOS App Domain", // iOS App Domain
+  "Your Android App Domain"  // Android App Domain
 );
 
 if (isInitialized) {
@@ -1022,7 +1031,7 @@ GDPR 기능을 테스트할 때, 테스트 목적으로 다음 인터페이스�
 // UMPDebugSettings.testDeviceIdentifiers = @[ @"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" ];
 
 gdprInterface?.setDebug(
-  "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", // TEST DEVICE IDENTIFIER 
+  "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", // TEST DEVICE IDENTIFIER
   true                                    // SIMULATE EU REGION? TRUE: EUROPE REGION - FALSE: DON'T SIMULATE
 );
 ```
@@ -1036,10 +1045,10 @@ const gdprInterface = await RNBidmadGDPR.create();
 ```js
 gdprInterface?.setCallbacks({
   ... other callbacks ...
-  
+
   onConsentInfoUpdateSuccess: async () => {
     const status = await gdprInterface?.getConsentStatus();
-    
+
     switch (status) {
       case RNBidmadUMPStatus.Unknown:
         // Please call requestConsentInfoUpdate method to update the status.
@@ -1048,14 +1057,14 @@ gdprInterface?.setCallbacks({
         // ** UMP FORM SHOULD EXPLICITELY DISPLAYED FOR GETTING THE USER CONSENT **
         break;
       case RNBidmadUMPStatus.NotRequired:
-        // User consent status for GDPR is not required as the user is not in the EU region. 
+        // User consent status for GDPR is not required as the user is not in the EU region.
         break;
       case RNBidmadUMPStatus.Obtained:
         // User consent status is already obtained, and the UMP popup is not required to be shown.
         break;
     }
   }
-  
+
   ... other callbacks ...
 });
 
@@ -1067,11 +1076,11 @@ await gdprInterface?.requestConsentInfoUpdate();
 ```js
 gdprInterface?.setCallbacks({
   ... other callbacks ...
-  
+
   onConsentFormLoadSuccess: async () => {
     // ** UMP FORM IS NOW READY TO BE SHOWN **
   }
-  
+
   ... other callbacks ...
 });
 
@@ -1104,7 +1113,7 @@ const gdprInterface = await RNBidmadGDPR.create();
 gdprInterface?.setCallbacks({
   onConsentInfoUpdateSuccess: async () => {
     const status = await gdprInterface?.getConsentStatus();
-    
+
     switch (status) {
       case RNBidmadUMPStatus.Unknown:
         break;

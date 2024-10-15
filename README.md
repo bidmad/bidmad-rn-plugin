@@ -1,5 +1,10 @@
 # bidmad-rn-plugin
 
+> [!IMPORTANT]
+> Starting with version 0.10.0, the previously used Appkey has been changed to AppDomain.<br>
+> **AppDomain is not compatible with existing Appkeys, so a new AppDomain must be issued to initiaize.**<br>
+> If you are updating to version 0.10.0, please contact **Techlabs Platform Operations Team.**<br>
+
 Bidmad-RN-Plugin is a plugin for using Bidmad, a mobile app advertisement SDK, in React Native
 
 ## Shortcuts
@@ -812,8 +817,8 @@ public static final ** CREATOR;
 
 ### Setting Admob App Identifier
 
-Google Admob requires applications to include app identifiers in both info.plist (iOS) and manifest (Android) files.
-Please refer to "App ID from ADMOB Dashboard" section of [Find Your App Key](https://github.com/bidmad/SDK/wiki/Find-your-app-key%5BEN%5D#app-id-from-admob-dashboard) document.
+Google Admob requires applications to include app identifiers in both info.plist (iOS) and manifest (Android) files.<br>
+Please refer to "App ID from ADMOB Dashboard" section of [Find Your App Key](https://github.com/bidmad/SDK/wiki/Find-your-app-key%5BEN%5D#app-id-from-admob-dashboard) document.<br>
 After finding your own app's identifier, please add it to info.plist or AndroidManifest.xml.
 
 iOS
@@ -865,15 +870,15 @@ case RNBidmadTrackingAuthorizationStatus.LessThaniOS14:
 ### Initializing BidmadSDK
 
 The "initializeSdk" method performs tasks required to run BidmadSDK. Please call the method before loading ads.
-The "initializeSdk" method takes in iOS and Android app keys as arguments, and the app keys can be checked in ADOP Insight Webpage (insight.adop.cc).
-Please refer to the [Find Your App Key](https://github.com/bidmad/SDK/wiki/Find-your-app-key%5BEN%5D) guide for further instruction on how to find app keys from ADOP Insight. 
+The "initializeSdk" method takes the iOS and Android app domain as arguments, and the app domain can be issued through the Techlabs platform operations team.
+(*To check the App Domain, please contact the Techlabs platform operation team.)
 
 ```js
 import { RNBidmadCommon } from "bidmad-rn-plugin";
 
 const isInitialized = await RNBidmadCommon.initializeSdk(
-  "6b097551-7f78-11ed-a117-026864a21938", // iOS App Key
-  "ff8090d3-3e28-11ed-a117-026864a21938"  // Android App Key
+  "Your iOS APP Domain", // iOS App Key
+  "Your AOS APP Domain"  // Android App Key
 );
 
 if (isInitialized) {
@@ -1025,7 +1030,7 @@ rewardAd?.show();
 ### GDPR Interface
 
 The General Data Protection Regulation (GDPR) is a European Union regulation on information privacy in the EU area.
-If your app service is used in the EU region, you must first ask users whether they consent on providing personal data for ad serving. 
+If your app service is used in the EU region, you must first ask users whether they consent on providing personal data for ad serving.
 Bidmad provides a wrapper interface for Google User Messaging Platform, which provides a form UI that collects consent information from the user.
 
 When testing GDPR functionalities, you can simulate the European region for testing purposes using the following interface.
@@ -1035,7 +1040,7 @@ When testing GDPR functionalities, you can simulate the European region for test
 // UMPDebugSettings.testDeviceIdentifiers = @[ @"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" ];
 
 gdprInterface?.setDebug(
-  "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", // TEST DEVICE IDENTIFIER 
+  "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", // TEST DEVICE IDENTIFIER
   true                                    // SIMULATE EU REGION? TRUE: EUROPE REGION - FALSE: DON'T SIMULATE
 );
 ```
@@ -1049,10 +1054,10 @@ const gdprInterface = await RNBidmadGDPR.create();
 ```js
 gdprInterface?.setCallbacks({
   ... other callbacks ...
-  
+
   onConsentInfoUpdateSuccess: async () => {
     const status = await gdprInterface?.getConsentStatus();
-    
+
     switch (status) {
       case RNBidmadUMPStatus.Unknown:
         // Please call requestConsentInfoUpdate method to update the status.
@@ -1061,14 +1066,14 @@ gdprInterface?.setCallbacks({
         // ** UMP FORM SHOULD EXPLICITELY DISPLAYED FOR GETTING THE USER CONSENT **
         break;
       case RNBidmadUMPStatus.NotRequired:
-        // User consent status for GDPR is not required as the user is not in the EU region. 
+        // User consent status for GDPR is not required as the user is not in the EU region.
         break;
       case RNBidmadUMPStatus.Obtained:
         // User consent status is already obtained, and the UMP popup is not required to be shown.
         break;
     }
   }
-  
+
   ... other callbacks ...
 });
 
@@ -1080,11 +1085,11 @@ await gdprInterface?.requestConsentInfoUpdate();
 ```js
 gdprInterface?.setCallbacks({
   ... other callbacks ...
-  
+
   onConsentFormLoadSuccess: async () => {
     // ** UMP FORM IS NOW READY TO BE SHOWN **
   }
-  
+
   ... other callbacks ...
 });
 
@@ -1117,7 +1122,7 @@ const gdprInterface = await RNBidmadGDPR.create();
 gdprInterface?.setCallbacks({
   onConsentInfoUpdateSuccess: async () => {
     const status = await gdprInterface?.getConsentStatus();
-    
+
     switch (status) {
       case RNBidmadUMPStatus.Unknown:
         break;
