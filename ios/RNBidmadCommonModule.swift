@@ -24,9 +24,9 @@ class RNBidmadCommonModule: NSObject, RCTBridgeModule {
     func initializeSdk(appDomain: String,
                        resolver resolve: @escaping RCTPromiseResolveBlock,
                        rejecter reject: @escaping RCTPromiseRejectBlock) {
-        BidmadCommon.initializeSdk(withAppDomain: appDomain) { success in
-            resolve(success)
-        }
+      BIDMADSetting.sharedInstance().initializeSdk(withDomain: appDomain, platform: "reactnative") { success in
+        resolve(success)
+      }
     }
 
     func reqAdTrackingAuthorization(resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
