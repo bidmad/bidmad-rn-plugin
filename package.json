@@ -1,6 +1,6 @@
 {
   "name": "bidmad-rn-plugin",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "a bridge plugin that allows communication between native BidmadSDK and react native interfaces",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
