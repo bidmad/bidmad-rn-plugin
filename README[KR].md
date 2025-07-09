@@ -1,6 +1,7 @@
 # bidmad-rn-plugin
 
 > [!IMPORTANT]
+> 0.10.4 버전부터는, 비드매드 플러그인은 **iOS 13.0 이상**을 요구합니다.
 > 0.10.0 버전부터는 기존에 사용하던 **Appkey가 AppDomain으로 변경**되었습니다.<br>
 > **AppDomain은 기존 Appkey와 호환이 되지 않아 initiaize를 위해서는 AppDomain을 새로 발급받으셔야 합니다.**<br>
 > 0.10.0 버전으로 업데이트 하시는 경우에는 **테크랩스 플랫폼 사업부 운영팀에 연락 부탁 드립니다.**<br>

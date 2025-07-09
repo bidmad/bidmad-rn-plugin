@@ -1,6 +1,7 @@
 # bidmad-rn-plugin
 
 > [!IMPORTANT]
+> Starting with version 0.10.4, **iOS 13.0 or above** is required.
 > Starting with version 0.10.0, the previously used Appkey has been changed to AppDomain.<br>
 > **AppDomain is not compatible with existing Appkeys, so a new AppDomain must be issued to initiaize.**<br>
 > If you are updating to version 0.10.0, please contact **Techlabs Platform Operations Team.**<br>
