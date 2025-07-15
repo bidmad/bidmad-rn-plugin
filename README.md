@@ -28,7 +28,11 @@ Bidmad-RN-Plugin is a plugin for using Bidmad, a mobile app advertisement SDK, i
 - [Other Interfaces](#other-interfaces)
 
 ## Installation
-
+> [!IMPORTANT]
+> Bidmad does not support fabric architecture.<br>
+> Starting from version 0.10.4, the following development environment is required.<br>
+> iOS development environment requires **Minimum Deployments iOS 13.0 or above**.<br>
+> AOS development environment requires **Minimum SDK 23 / Kotlin 2.1.0 or above**.
 ```sh
 npm install bidmad-rn-plugin
 

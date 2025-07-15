@@ -29,6 +29,12 @@ Bidmad-RN-Plugin은 모바일 앱 광고 SDK인 Bidmad를 React Native에서 사
 
 ## Installation
 
+> [!IMPORTANT]
+> Bidmad는 fabric architecture를 지원하지 않습니다. <br>
+> 0.10.4 버전부터 다음의 개발환경이 요구됩니다.<br>
+> iOS 개발환경은 **Minimum Deployments iOS 13.0 이상**을 요구합니다.<br>
+> AOS 개발환경은 **Minimum SDK 23 / Kotlin 2.1.0 이상**을 요구합니다.
+
 ```sh
 npm install bidmad-rn-plugin
 
