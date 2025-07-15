@@ -1,7 +1,6 @@
 # bidmad-rn-plugin
 
 > [!IMPORTANT]
-> Starting with version 0.10.4, **iOS 13.0 or above** is required.
 > Starting with version 0.10.0, the previously used Appkey has been changed to AppDomain.<br>
 > **AppDomain is not compatible with existing Appkeys, so a new AppDomain must be issued to initiaize.**<br>
 > If you are updating to version 0.10.0, please contact **Techlabs Platform Operations Team.**<br>
@@ -29,7 +28,11 @@ Bidmad-RN-Plugin is a plugin for using Bidmad, a mobile app advertisement SDK, i
 - [Other Interfaces](#other-interfaces)
 
 ## Installation
-
+> [!IMPORTANT]
+> Bidmad does not support fabric architecture.<br>
+> Starting from version 0.10.4, the following development environment is required.<br>
+> iOS development environment requires **Minimum Deployments iOS 13.0 or above**.<br>
+> AOS development environment requires **Minimum SDK 23 / Kotlin 2.1.0 or above**.
 ```sh
 npm install bidmad-rn-plugin
 
