@@ -2,6 +2,7 @@ package com.bidmadrnplugin;
 
 import android.app.Activity;
 
+import com.adop.sdk.reward.RewardListener;
 import java.util.UUID;
 
 import ad.helper.openbidding.OBHLog;
@@ -26,7 +27,12 @@ public class RNReward extends BaseReward {
 		return (RNReward) mInstanceMap.get(instanceId);
 	}
 
-	public void initObject(Activity activity) {
+  @Override
+  public void setListener(RewardListener listener) {
+    super.setListener(listener);
+  }
+
+  public void initObject(Activity activity) {
 		OBHLog.write(LOG_TAG,"RNInterstitial - initObject Start ");
 		setActivity(activity);
 		setObject();
