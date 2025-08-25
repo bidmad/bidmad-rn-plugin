@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.source_files = "ios/**/*.{h,m,mm,swift}"
 
-  s.dependency "BidmadSDK", "6.13.3"
+  s.dependency "BidmadSDK/core", "6.13.3"
   s.dependency "OpenBiddingHelper", "6.13.2"
 
   s.dependency "BidmadAdFitAdapter", "3.12.7.12.1"
